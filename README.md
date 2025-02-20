@@ -53,8 +53,8 @@
 
 ## Future improvements
 
-- Create auth to only add cities the allowed users
-- Create realtime system to update graphics in case reduce the schedule interval
-- Use another API to get Cities because the current are not missing some ones
-- Create a display to see the current temperature, in addition to historical data
-- Allow update the unit from Temperatures (now only accept Celcius)
+- Implement authentication to restrict city additions to authorized users.
+- Develop a real-time system to update graphics when the schedule interval is reduced.
+- Use a different API to fetch city data, as the current one is missing some cities.
+- Create a display to show the current temperature alongside historical data.
+- Allow users to update the temperature unit (currently, only Celsius is supported).
