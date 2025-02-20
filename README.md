@@ -9,8 +9,8 @@
 
 1. **Clone the repository**
    ```sh
-   git clone <repository_url>
-   cd <project_directory>
+   git clone git@github.com:guimossibento/temp-app.git
+   cd temp-app
    ```
 
 2. **Set up environment variables**
