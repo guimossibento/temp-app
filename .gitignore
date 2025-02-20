@@ -1,0 +1,63 @@
+# Laravel & Composer
+/vendor
+/node_modules
+/public/storage
+/storage/*.key
+/storage/app/public
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/logs/*
+/bootstrap/cache/*.php
+
+# Environment files
+.env
+.env.*.php
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+/.idea
+/.vscode
+*.sublime-workspace
+*.sublime-project
+
+# Laravel Mix / Vite build artifacts
+/public/build
+
+# NPM debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Composer logs
+composer.lock
+
+# Cache files
+*.cache
+*.log
+
+# Temporary files
+tmp/
+temp/
+
+# Docker files
+docker-compose.override.yml
+
+# Laravel Sail
+/vendor/bin/sail
+
+# PHPUnit result cache
+.phpunit.result.cache
+
+# Coverage reports
+coverage/
+
+# Additional build directories
+/public/hot
+
+# Miscellaneous
+Homestead.json
+Homestead.yaml
