@@ -5,6 +5,7 @@
     use GuzzleHttp\Client;
     use GuzzleHttp\Exception\GuzzleException;
     use Illuminate\Support\Facades\Cache;
+    use Illuminate\Support\Facades\Log;
 
     class CountryCitiesService
     {
@@ -37,7 +38,7 @@
                         return $data['data'];
                     }
                 } catch (GuzzleException $e) {
-                    return [];
+                    Log::error($e->getMessage());
                 }
                 return [];
             });

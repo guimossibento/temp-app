@@ -73,7 +73,7 @@
 
                 // Only cache if coordinates were found.
                 if ($coords['latitude'] && $coords['longitude']) {
-                    Cache::put($cacheKey, $coords, $cacheTime * 60);
+                    Cache::put($cacheKey, $coords, $cacheTime);
                     return $coords;
                 }
             } catch (GuzzleException $e) {
