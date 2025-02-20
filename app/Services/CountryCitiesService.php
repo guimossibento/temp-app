@@ -69,7 +69,7 @@
                 }
             }
             // Sort alphabetically by country name
-            usort($countries, function($a, $b) {
+            usort($countries, function ($a, $b) {
                 return strcmp($a['name'], $b['name']);
             });
             return $countries;

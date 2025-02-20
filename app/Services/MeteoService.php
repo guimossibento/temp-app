@@ -39,7 +39,7 @@
             $url = 'https://geocoding-api.open-meteo.com/v1/search';
             try {
                 $params = [
-                    'name'    => $city,
+                    'name' => $city,
                     'country' => $country,
                 ];
 
@@ -59,14 +59,14 @@
                 if (!empty($filteredResults)) {
                     $firstResult = reset($filteredResults);
                     $coords = [
-                        'latitude'  => $firstResult['latitude']  ?? null,
+                        'latitude'  => $firstResult['latitude'] ?? null,
                         'longitude' => $firstResult['longitude'] ?? null,
                     ];
                 } else {
                     // If no match, optionally fallback to the first result.
                     $firstResult = $results[0] ?? [];
                     $coords = [
-                        'latitude'  => $firstResult['latitude']  ?? null,
+                        'latitude'  => $firstResult['latitude'] ?? null,
                         'longitude' => $firstResult['longitude'] ?? null,
                     ];
                 }
@@ -97,8 +97,8 @@
             try {
                 $response = $this->client->request('GET', $url, [
                     'query' => [
-                        'latitude'        => $latitude,
-                        'longitude'       => $longitude,
+                        'latitude' => $latitude,
+                        'longitude' => $longitude,
                         'current_weather' => 'true',
                     ],
                 ]);

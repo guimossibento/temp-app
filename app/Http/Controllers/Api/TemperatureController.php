@@ -32,9 +32,9 @@
         public function store(Request $request)
         {
             $validated = $request->validate([
-                'city_id'     => 'required|exists:cities,id',
-                'value'       => 'required|numeric',
-                'unit'        => 'required|string|in:C,F',
+                'city_id' => 'required|exists:cities,id',
+                'value' => 'required|numeric',
+                'unit' => 'required|string|in:C,F',
                 'recorded_at' => 'required|date',
             ]);
 
@@ -57,9 +57,9 @@
         public function update(Request $request, Temperature $temperature)
         {
             $validated = $request->validate([
-                'city_id'     => 'required|exists:cities,id',
-                'value'       => 'required|numeric',
-                'unit'        => 'required|string|in:C,F',
+                'city_id' => 'required|exists:cities,id',
+                'value' => 'required|numeric',
+                'unit' => 'required|string|in:C,F',
                 'recorded_at' => 'required|date',
             ]);
 

@@ -48,7 +48,7 @@
 
             try {
                 $validated = $request->validate([
-                    'name'    => 'required|max:255|unique:cities,name',
+                    'name' => 'required|max:255|unique:cities,name',
                     'country' => ['required', 'size:2'],
                 ]);
             } catch (ValidationException $e) {
@@ -66,7 +66,7 @@
                     ->withInput();
             }
 
-            $validated['latitude']  = $coords['latitude'];
+            $validated['latitude'] = $coords['latitude'];
             $validated['longitude'] = $coords['longitude'];
 
             City::create($validated);
@@ -74,11 +74,6 @@
             return redirect()->route('cities.index')
                 ->with('success', 'City created successfully.');
         }
-
-
-
-
-
 
         /**
          * Delete a city from the database.
