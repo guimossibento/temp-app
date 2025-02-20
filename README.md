@@ -23,12 +23,8 @@
    ```sh
    docker-compose up -d --build
    ```
+   Wait for the commands to run and you'll be able to access the application
 
-4. **Run the application setup**
-   ```sh
-   docker exec -it laravel_app bash
-   ./entrypoint.sh
-   ```
 
 5. **Access the application**
     - Application: [http://localhost:8080](http://localhost:8080)
