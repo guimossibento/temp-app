@@ -51,3 +51,10 @@
     - The system automatically records a temperature entry for each registered city every hour.
 
 
+## Future improvements
+
+- Create auth to only add cities the allowed users
+- Create realtime system to update graphics in case reduce the schedule interval
+- Use another API to get Cities because the current are not missing some ones
+- Create a display to see the current temperature, in addition to historical data
+- Allow update the unit from Temperatures (now only accept Celcius)

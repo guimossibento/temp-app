@@ -37,7 +37,7 @@
                         return $data['data'];
                     }
                 } catch (GuzzleException $e) {
-                    // Optionally log the error: \Log::error($e->getMessage());
+                    return [];
                 }
                 return [];
             });
